@@ -3,7 +3,7 @@ class IngredientsController < ApplicationController
     @ingredients = Ingredient.all
   end
 
-  def shox
-    @ingredient
+  def show
+
   end
 end

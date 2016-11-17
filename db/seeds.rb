@@ -10,3 +10,4 @@ Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
 
 
+Dose.create!(description: "2cl", ingredient_id: 1, cocktail_id: 1)

@@ -1,6 +1,6 @@
 <h1><%= @cocktail.name %></h1>
 <% if @cocktail.photo? %>
-  <%= cl_image_tag @cocktail.photo.path, width: 500, height: 300, crop: :fill %>
+  <%= cl_image_tag @cocktail.photo.path, width: 200, height: 300, crop: :fill %>
 <% end %>
 <ul>
   <% @cocktail.doses.each do |dose| %>
@@ -17,4 +17,5 @@
 
 </p>
 <p><%= link_to "Home", cocktails_path %></p>
+<p><%= link_to "Delete this cocktail", cocktail_path(@cocktail), method: :delete  %></p>
 

@@ -1,8 +1,10 @@
 ruby '2.3.1'
 source 'https://rubygems.org'
 
+gem "cloudinary", "1.1.0"
+gem "attachinary", github: "assembler/attachinary"
+gem "jquery-fileupload-rails"
 gem 'figaro'
-
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
